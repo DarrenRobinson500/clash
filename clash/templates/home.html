@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+{% block content %}
+
+<h1>Clash</h1>
+<div class="container">
+    <div class="row">
+    {% for x in students %}
+        <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">{{x}}</h5>
+                <p class="card-text">{{x.email}}</p>
+                <a href="#" class="btn btn-primary">Edit</a>
+              </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
